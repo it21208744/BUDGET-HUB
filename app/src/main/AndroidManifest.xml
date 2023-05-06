@@ -12,7 +12,7 @@
         android:theme="@style/Theme.FirebaseKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".menuActivity"
             android:exported="false" />
         <activity
             android:name=".activities.TransactionDetailsActivity"
@@ -24,7 +24,7 @@
             android:name=".activities.InsertionActivity"
             android:exported="false" />
         <activity
-            android:name=".menuActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
