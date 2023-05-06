@@ -12,7 +12,7 @@ import com.example.firebasekotlin.R
 import com.example.firebasekotlin.models.BudgetModel
 import com.google.firebase.database.FirebaseDatabase
 
-class EmployeeDetailsActivity : AppCompatActivity() {
+class BudgetDetailsActivity : AppCompatActivity() {
     private lateinit var lmBudgetId: TextView
     private lateinit var lmBgName: TextView
     private lateinit var lmBgCategory: TextView
@@ -23,7 +23,7 @@ class EmployeeDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_employee_details)
+        setContentView(R.layout.activity_budget_details)
 
         initView()
         setValuesToViews()

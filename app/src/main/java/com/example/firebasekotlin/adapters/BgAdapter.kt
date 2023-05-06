@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.firebasekotlin.R
 import com.example.firebasekotlin.models.BudgetModel
 
-class EmpAdapter(private val bgList: ArrayList<BudgetModel>) :
-    RecyclerView.Adapter<EmpAdapter.ViewHolder>() {
+class BgAdapter(private val bgList: ArrayList<BudgetModel>) :
+    RecyclerView.Adapter<BgAdapter.ViewHolder>() {
 
     private lateinit var mListener: onItemClickListener
 

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.firebasekotlin.models.BudgetModel
 import com.example.firebasekotlin.R
-import com.example.firebasekotlin.adapters.EmpAdapter
+import com.example.firebasekotlin.adapters.BgAdapter
 import com.google.firebase.database.*
 
 class FetchingActivity : AppCompatActivity() {
@@ -49,13 +49,13 @@ class FetchingActivity : AppCompatActivity() {
                         val empData = empSnap.getValue(BudgetModel::class.java)
                         bgList.add(empData!!)
                     }
-                    val mAdapter = EmpAdapter(bgList)
+                    val mAdapter = BgAdapter(bgList)
                     bgRecyclerView.adapter = mAdapter
 
-                    mAdapter.setOnItemClickListener(object : EmpAdapter.onItemClickListener{
+                    mAdapter.setOnItemClickListener(object : BgAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
 
-                            val intent = Intent(this@FetchingActivity, EmployeeDetailsActivity::class.java)
+                            val intent = Intent(this@FetchingActivity, BudgetDetailsActivity::class.java)
 
                             //put extras
                             intent.putExtra("budgetID", bgList[position].budgetID)
