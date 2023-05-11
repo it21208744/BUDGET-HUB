@@ -47,10 +47,10 @@ class InsertionActivity : AppCompatActivity() {
                 lnBgName.error = "Please enter name"
             }
             if (bgCategory.isEmpty()) {
-                lnBgCategory.error = "Please enter age"
+                lnBgCategory.error = "Please enter category"
             }
             if (bgAmount.isEmpty()) {
-                lnBgAmount.error = "Please enter salary"
+                lnBgAmount.error = "Please enter amount"
             }
             Toast.makeText(this, "Empty Data Detected", Toast.LENGTH_LONG).show()
         }
