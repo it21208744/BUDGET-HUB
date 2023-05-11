@@ -7,6 +7,7 @@
     android:background="@drawable/view"
     tools:context=".activities.BudgetDetailsActivity">
 
+
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
