@@ -63,7 +63,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Budget id"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -112,7 +112,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Budget Name"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -162,7 +162,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Category"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp"
 
 
@@ -216,8 +216,8 @@
                     android:layout_gravity="center"
 
                     android:gravity="center"
-                    android:text="Amount"
-                    android:textColor="@color/black"
+                    android:text="Amount(Rs.)"
+                    android:textColor="@color/white"
                     android:textSize="15sp"
 
 

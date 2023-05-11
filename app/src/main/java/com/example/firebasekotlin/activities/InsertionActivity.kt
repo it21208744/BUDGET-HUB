@@ -60,9 +60,9 @@ class InsertionActivity : AppCompatActivity() {
 
             val budgetID = dbRef.push().key!!
 
-            val employee = BudgetModel(budgetID, bgName, bgCategory, bgAmount)
+            val budgetdata = BudgetModel(budgetID, bgName, bgCategory, bgAmount)
 
-            dbRef.child(budgetID).setValue(employee)
+            dbRef.child(budgetID).setValue(budgetdata)
                 .addOnCompleteListener {
                     Toast.makeText(this, "Budget added successfully", Toast.LENGTH_LONG).show()
 
